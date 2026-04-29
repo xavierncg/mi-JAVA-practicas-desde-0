@@ -3,13 +3,16 @@ package MetodoStatic;
 public class MainMatch {
     public static void main(String[] args) {
 
-        int result = MatchExample.add(1,2);
-        System.out.println(result);
+        int result = MatchExample.add(2,2);         //Pertenece a la clase.
+        System.out.println("La Suma es " + result);
 
-        MatchExample matchExample = new MatchExample();
-         result = matchExample.subtract(10,4);
-        System.out.println(result);
 
+         result = MatchExample.subtract(10,5);          //Instancia.
+        System.out.println("La Resta es " + result);
+
+
+		result = MatchExample.subtract(20,5);
+        System.out.println("La Resta es " + result);
     }
 
 }
