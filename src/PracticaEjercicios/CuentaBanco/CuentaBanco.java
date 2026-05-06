@@ -36,5 +36,29 @@ public class CuentaBanco {
         this.saldoDisponible = saldoDisponible;
     }
 
+    public void monstrarInformacion(){
+        System.out.println("Titular: " + titular);
+        System.out.println("Numero de cuenta: " + numeroCuenta);
+        System.out.println("Saldo disponible: " + saldoDisponible);
+    }
+
+    public void depositarDinero(double dinero){
+        if(dinero < 0){
+            System.out.println("No se pueden realizar depositos negativos");
+            return;
+        }
+        setSaldoDisponible(saldoDisponible + dinero);
+        System.out.println("Saldo depositado: " + saldoDisponible);
+    }
+
+    public void retirarDinero(double retirarDinero){
+        if( retirarDinero > saldoDisponible){
+            System.out.println("Saldo Insuficiente");
+            return;
+        }
+        setSaldoDisponible(saldoDisponible - retirarDinero);
+        System.out.println("Saldo retirado: " + retirarDinero);
+    }
+
 
 }
