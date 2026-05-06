@@ -20,7 +20,7 @@ public class Car {
     }
 
     public void setNeumaticos(int neumaticos){
-        this.neumaticos = this.neumaticos;
+        this.neumaticos = neumaticos;
     }
 
     public int getWindows(){
