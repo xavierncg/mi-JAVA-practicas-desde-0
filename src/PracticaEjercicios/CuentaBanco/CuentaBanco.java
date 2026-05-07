@@ -5,45 +5,45 @@ public class CuentaBanco {
     private String titular;
     private double saldoDisponible;
 
-    public CuentaBanco(int numeroCuenta, String titular, double saldoDisponible){
+    public CuentaBanco(int numeroCuenta, String titular, double saldoDisponible) {
         this.numeroCuenta = numeroCuenta;
-        this. titular = titular;
+        this.titular = titular;
         this.saldoDisponible = saldoDisponible;
 
     }
 
-    public int getNumeroCuenta(){
+    public int getNumeroCuenta() {
         return numeroCuenta;
     }
 
-    public String getTitular(){
+    public String getTitular() {
         return titular;
     }
 
-    public double getSaldoDisponible(){
+    public double getSaldoDisponible() {
         return saldoDisponible;
     }
 
-    public void setNumeroCuenta(int numeroCuenta){
+    public void setNumeroCuenta(int numeroCuenta) {
         this.numeroCuenta = numeroCuenta;
     }
 
-    public void setTitular(String titular){
+    public void setTitular(String titular) {
         this.titular = titular;
     }
 
-    public void setSaldoDisponible(double saldoDisponible){
+    public void setSaldoDisponible(double saldoDisponible) {
         this.saldoDisponible = saldoDisponible;
     }
 
-    public void monstrarInformacion(){
+    public void monstrarInformacion() {
         System.out.println("Titular: " + titular);
         System.out.println("Numero de cuenta: " + numeroCuenta);
         System.out.println("Saldo disponible: " + saldoDisponible);
     }
 
-    public void depositarDinero(double dinero){
-        if(dinero < 0){
+    public void depositarDinero(double dinero) {
+        if (dinero < 0) {
             System.out.println("No se pueden realizar depositos negativos");
             return;
         }
@@ -51,8 +51,8 @@ public class CuentaBanco {
         System.out.println("Saldo depositado: " + saldoDisponible);
     }
 
-    public void retirarDinero(double retirarDinero){
-        if( retirarDinero > saldoDisponible){
+    public void retirarDinero(double retirarDinero) {
+        if (retirarDinero > saldoDisponible) {
             System.out.println("Saldo Insuficiente");
             return;
         }

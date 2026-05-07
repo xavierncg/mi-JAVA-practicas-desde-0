@@ -1,9 +1,9 @@
 package PracticaEjercicios.CuentaBanco;
 
 public class CuentaBancoMain {
-    public static void main(String []args){
+    public static void main(String[] args) {
 
-        CuentaBanco cuenta = new CuentaBanco(2244,"yamir Adrian",00.00);
+        CuentaBanco cuenta = new CuentaBanco(2244, "yamir Adrian", 00.00);
 
         cuenta.monstrarInformacion();
         cuenta.depositarDinero(7000.000);
