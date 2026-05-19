@@ -24,18 +24,22 @@ public class BankApp {
             opcion = scanner.nextInt();
 
             switch (opcion) {
-                case 1:
+                case 1:{
                     bankAccount.depositarDinero(scanner.nextDouble());
                     break;
-                case 2:
+                    }
+                case 2: {
                     bankAccount.retirarDinero(scanner.nextDouble());
                     break;
-                case 3:
+                }
+                case 3: {
                     bankAccount.mostrarinfo();
                     break;
-                case 4:
+                }
+                case 4: {
                     System.out.println("Operacion Finalizada");
                     break;
+                }
             }
 
             System.out.println("");
