@@ -31,7 +31,7 @@ public class BankApp {
                     bankAccount.retirarDinero(scanner.nextDouble());
                     break;
                 case 3:
-                    bankAccount.monstrarInfo();
+                    bankAccount.mostrarinfo();
                     break;
                 case 4:
                     System.out.println("Operacion Finalizada");

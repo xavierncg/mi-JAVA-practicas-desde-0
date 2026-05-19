@@ -35,7 +35,7 @@ public class BankAccount {
     }
 
     public void retirarDinero(double retirarMonto){
-        if (retirarMonto < balance){
+        if (retirarMonto > balance){
             System.out.println("Saldo Insuficiente");
             return;
         }
@@ -43,7 +43,7 @@ public class BankAccount {
         System.out.println("Retiro Exitoso");
     }
 
-    public void monstrarInfo(){
+    public void mostrarinfo(){
         System.out.println("Titular de la Cuenta: " + titularDeLaCuenta);
         System.out.println("Saldo Actual: " + getBalance());
 
