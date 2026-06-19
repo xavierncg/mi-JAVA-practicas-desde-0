@@ -1,10 +1,10 @@
 package ProyectoFinal;
 //Creamos una clase Login para validar el login de el usuario al cajero
 public class Login {
-    private String rut = null;
-    private String rutConfirm = null;
-    private String password = null;
-    private String passwordConfirm = null;
+    private String rut;
+    private String rutConfirm;
+    private String password;
+    private String passwordConfirm;
     //Realizamos el Constructor de la Clase para inicializarla
     public Login(String rut, String rutConfirm, String password, String passwordConfirm){
         this.rut = rut;
