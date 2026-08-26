@@ -24,14 +24,14 @@ public class BankAccount {
         this.balance = balance;
     }
 
-//  Creamos los Methodos de la clase.
+//  Creamos los Metodos de la clase.
     public void depositarDinero(double depositarMonto){
         if(depositarMonto <= 0){
             System.out.println("No se pueden realizar depósitos menores o igual a 0");
             return;
         }
         balance += depositarMonto;
-        System.out.println("Depositado con éxito");
+            System.out.println("Depositado con éxito " + "\nSaldo Actual: " + getBalance());
     }
 
     public void retirarDinero(double retirarMonto){
@@ -44,7 +44,7 @@ public class BankAccount {
     }
 
     public void mostrarinfo(){
-        System.out.println("Titular de la Cuenta: " + titularDeLaCuenta);
+        System.out.println("Titular de la Cuenta: " + getTitularDeLaCuenta());
         System.out.println("Saldo Actual: " + getBalance());
 
     }
